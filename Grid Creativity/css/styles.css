@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/*GENERAL STYLES*/
+body{
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    margin: 0px;
+}
+h3{
+    font-weight: 700;
+    font-size: 25px;
+    padding: 15px 0px;
+    margin: 0px;
+}
+
+/*GRID*/
+.grid-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.grid-item{
+    background-color: white;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 25px 10px;
+}
+
+/*IMAGES*/
+.images{
+    position: relative;
+    text-align: center;
+    padding: 10px;
+}
+.book{
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    margin: 0px;
+}
+.bestseller{
+    position: absolute;
+    width: 20%;
+    top: 20px;
+    right: 20px;
+}
+
+/*DESCRIPTION*/
+.description{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: #242424;
+    margin: 0px;
+    padding: 0px 0px 20px 0px;
+}
+
+/*LINEA*/
+.linea{
+    opacity: 50%;
+    padding: 0;
+    margin: 0;
+}
+
+/*RATING*/
+.rating{
+    padding: 20px 0px;
+    gap: 15px;
+    justify-content: center;
+}
+.rating, .stars{
+    display: flex;
+    align-items: center;
+    gap: 5px; 
+}
+.stars img{
+    width: 14px;
+    height: 11px;
+}
+.rate-text p{
+    margin: 0px;
+    font-size: 12px;
+}
+
+/*BUTTON*/
+.button{
+    align-items: center;
+}
+.learn{
+    text-align: center;
+    color: white;
+    background-color: #2bada7;
+    margin: 0px;
+    padding: 10px 20%;
+    border-radius: 50px;
+    border: #2bada7 2px solid;
+}
+
+
+@media screen and (min-width:768px){
+    .grid-item{
+        width: calc(25% - 28px);
+    }
+}
