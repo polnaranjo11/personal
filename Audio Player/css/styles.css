@@ -1,0 +1,53 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(228, 228, 228);
+}
+h1{
+    text-align: center;
+    font-family: sans-serif;
+    padding: 10px;
+    margin: 0px 0px 20px 0px;
+    background-color: rgb(0, 0, 0);
+}
+.frame{
+    background-color: rgb(143, 143, 143);
+    box-shadow: 10px 10px 5px rgba(0,0,0,0.5);
+    padding: 50px 0px;
+    margin-bottom: 30px;
+}
+.video-file{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(59, 59, 59);
+    border-radius: 10px;
+    border: 20px solid rgb(59, 59, 59);
+}
+video{
+    width: 100%;
+    border-radius: 10px;
+}
+.controls{
+    border-radius: 5px;
+    display: flex;
+    padding: 20px 10px 10px 10px;
+    justify-content: space-around;
+    width: 40%;
+    margin: inherit;
+    gap: 20px;
+}
+.controls img{
+    width: 50%;
+}
+.btn{
+    display: flex;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}

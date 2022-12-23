@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" type="image/x-icon" href="">
+        <title>Audio Player w/ Java - Pol Naranjo</title>
+    </head>
+    <body>
+        <h1>.</h1>
+        <div class="frame">
+            <div class="video-file">
+                <video id="videoshort">
+                    <source src="media/video/Billie Eilish - NDA (Official Music Video).mp4" type="video/mp4">
+                </video>
+                <div class="controls">
+                    <div class="btn stop" onclick="skip1()">
+                        <img src="media/img/rewind.png">
+                    </div>
+                    <div class="btn play" onclick="playVideo()">
+                        <img src="media/img/play.png">
+                    </div>
+                    <div class="btn pause" onclick="pauseVideo()">
+                        <img src="media/img/pause.png">
+                    </div>
+                    <div class="btn rewind" onclick="stopVideo()">
+                        <img src="media/img/stop.png">
+                    </div>
+                    <div class="btn forward" onclick="skip2()">
+                        <img src="media/img/forward.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1>.</h1>
+        <!--It has to go below so it can activate once the entire html is loaded -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
