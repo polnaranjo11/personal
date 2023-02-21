@@ -16,6 +16,75 @@
             <label for="encrypted-message">Encrypted message:</label>
             <textarea id="encrypted-message" readonly></textarea>
         </form>
-        <script src="js/script.js"></script>
+        <style>
+            .body{
+                margin: 0px;
+                padding: 0px;
+            }
+            h1 {
+                text-align: center;
+                margin-top: 50px;
+                margin-bottom: 30px;
+            }
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+            }
+            input[type="text"] {
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                box-shadow: 0px 0px 5px grey;
+            }
+            button {
+                padding: 10px;
+                background-color: #008CBA;
+                color: white;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
+            }
+            button:hover {
+                background-color: #005D6E;
+            }
+            #encrypted-message {
+                padding: 10px;
+                background-color: white;
+                border: none;
+                border-radius: 5px;
+                box-shadow: 0px 0px 5px grey;
+                width: 100%;
+                max-width: 500px;
+                min-height: 50px;
+            }
+        </style>
+        <script>
+            // Dictionary to switch characters to their encrypted versions
+            const conversion = {
+                'a': '4',
+                'e': '3',
+                'i': 'l',
+                'o': '0'
+            };
+
+            // Function to encrypt the message
+            function encryptMessage() {
+                const messageInput = document.getElementById('message');
+                const encryptedMessageOutput = document.getElementById('encrypted-message');
+                let message = messageInput.value.toLowerCase();
+                let encryptedMessage = '';
+                for (let i = 0; i < message.length; i++) {
+                    let char = message.charAt(i);
+                    if (char in conversion) {
+                        encryptedMessage += conversion[char];
+                    } else {
+                        encryptedMessage += char;
+                    }
+                }
+                encryptedMessageOutput.value = encryptedMessage;
+                messageInput.value = '';
+            }
+        </script>
     </body>
 </html>
