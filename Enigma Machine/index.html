@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="icon" type="image/x-icon" href="">
+        <title>Enigma Machine - Pol Naranjo</title>
+    </head>
+    <body>
+        <h1>ENIGMA MACHINE</h1>
+        <form onsubmit="return false;">
+            <label for="message">Enter your message:</label>
+            <input type="text" id="message" name="message" placeholder="Type your message here...">
+            <button onclick="encryptMessage()">Encrypt</button>
+            <label for="encrypted-message">Encrypted message:</label>
+            <textarea id="encrypted-message" readonly></textarea>
+        </form>
+        <script src="js/script.js"></script>
+    </body>
+</html>
