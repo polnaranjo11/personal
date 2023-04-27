@@ -1,0 +1,33 @@
+/*TO CENTER CONTENT AS EVERYTHING IN THE DESIGN IS CENTERED*/
+.works{
+    text-align: center;
+}
+
+/*LANDING PAGES IMAGES*/
+.landing-pages{
+    align-content: center;
+}
+.landing-pages img{
+    width: 90%;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 20px 10px;
+}
+
+/*BUTTON*/
+.btn{
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+/*DESKTOP*/
+@media screen and (min-width:768px) {
+    .landing-pages{
+        flex-wrap: wrap;
+        flex-direction:row;
+    }
+    .landing-pages img{
+        width: 40%;
+        height: auto;
+    }
+}

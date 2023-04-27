@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Work+Sans:wght@400;700&display=swap');
+
+body{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+    font-family: 'Work Sans';
+    color:#ffffff
+}
+a:active{
+    text-decoration: none;
+    font-family: 'Work Sans';
+    color:#ffffff
+}
+
+/*HEADINGS*/
+h1{
+    font-family: 'Crimson Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px, 2.5rem;
+    line-height: 125%;
+}
+h2{
+    font-family: 'Crimson Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px, 2rem;
+    line-height: 125%;
+}
+h3{
+    font-family: 'Crimson Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px, 1.75rem;
+    line-height: 125%;
+}
+h4{
+    font-family: 'Crimson Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px, 1.5rem;
+    line-height: 125%;
+}
+h5{
+    font-family: 'Crimson Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px, 1.25rem;
+    line-height: 125%;
+}
+h6{
+    font-family: 'Crimson Text';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px, 1rem;
+    line-height: 125%;
+}
+.sub-heading{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px, 1.25rem;
+    line-height: 125%;
+}
+.label{
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px, 1rem;
+    line-height: 125%;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+/*BODY TYPO STYLES*/
+p{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 15px, 0.9375rem;
+}
+.bold{
+    font-weight: 700;
+}
+.center{
+    text-align: center;
+}
+
+/*COLORS*/
+.white{color:#ffffff}
+.white75{color:rgba(255, 255,255,0.75)}
+.white50{color:rgba(255, 255,255,0.50)}
+.white25{color:rgba(255, 255,255,0.25)}
+.mint{color:#74C69D}
+.mint75{color:rgba(116, 198, 157,0.75)}
+.mint50{color:rgba(116, 198, 157,0.50)}
+.mint25{color:rgba(116, 198, 157,0.25)}
+.black{color:#212529}
+.black75{color:rgba(33, 37, 41, 0.75)}
+.black50{color:rgba(33, 37, 41, 0.50)}
+.black25{color:rgba(33, 37, 41, 0.25)}
+
+/*HEADER*/
+header{
+    background-color: #74C69D;
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-title{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+header img{
+    width: 40px;
+}
+header h1{
+    margin: 0px;
+}
+.header-nav{
+    display:none;
+}
+/*FOOTER*/
+footer{
+    background-color: #74C69D;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.footer-logos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.footer-logos img{
+    width: 100%;
+    max-width: 15px;
+}
+.footer-credits p{
+    margin: 0px;
+    padding-top: 20px;
+}
+
+/*BUTTONS*/
+.btn{
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #212529;
+    color:white;
+}
+
+/*DESKTOP*/
+@media screen and (min-width:768px) {
+    header{
+        padding: 20px 130px;
+    }
+    .menu-icon{
+        display:none;
+    }
+    .header-nav{
+        display:flex;
+        color:white;
+        gap: 20px;
+    }
+}
